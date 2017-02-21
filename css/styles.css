@@ -1,0 +1,14 @@
+.jumbotron{
+  align-content: center;
+}
+
+#reveal {
+  display: none;
+}
+ul{
+  list-style: none;
+}
+/*.container label{
+  font-style: normal;
+  font-family: cursive;
+}*/

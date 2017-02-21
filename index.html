@@ -1,17 +1,77 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script
-  src="https://code.jquery.com/jquery-3.1.1.js"
-  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
   <!-- <script src="js/jquery-3.1.1.js"></script> -->
   <script src="js/scripts.js"></script>
-  <title></title>
+  <title>Fortune Teller</title>
 </head>
-<body>
 
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="jumbotron small">
+        <h1>Fortune Teller</h1>
+        <h3>The Oracle knows ALL.....</h2>
+        </div>
+        <form id="formInput">
+          <div class="form-group">
+            <label>To gauge your luck, please click on all events that have happened to you in the past month</label></br>
+            <input type="checkbox" name="luck" value="rain"> I was caught in rain without a jacket this week</br>
+            <input type="checkbox" name="luck" value="animal"> An animal made eye contact with me recently</br>
+            <input type="checkbox" name="luck" value="trip"> Just returned from a trip</br>
+            <input type="checkbox" name="luck" value="penny"> Found a penny recently</br>
+            <input type="checkbox" name="luck" value="lunch"> Eating lunch is not a priority</br>
+            <input type="checkbox" name="luck" value="stuff"> I own too much stuff</br></br>
+          </div>
+
+          <div class="form-group" id="form2">
+            <strong>To predict your hopes and dreams, I need you to tell me which of the following apply</strong><br>
+            <input type="checkbox" name="hopes" value="money">There is nothing better than finding a $20 bill in your pocket<br>
+            <input type="checkbox" name="hopes" value="ambition">The thought of being the best at something is extremely appealing to me<br>
+            <input type="checkbox" name="hopes" value="contentment">I just wanna be happy, man<br>
+            <input type="checkbox" name="hopes" value="love">There is nothing better than the feeling after a good first date<br>
+            <input type="checkbox" name="hopes" value="athleticism">I would love to have an Olympic gold medal<br>
+            <input type="checkbox" name="hopes" value="intellect">I would love to have a Nobel Prize
+          </main>
+        </menu>
+      </div>
+      <div class="form-group">
+
+        <label>History</label></br>
+        <input type="checkbox" name="history" value="place"> Grew up in country</br>
+        <input type="checkbox" name="history" value="connection"> Reconnected with friend after long time</br>
+        <input type="checkbox" name="history" value="year"> Birthdate contains number 7</br>
+        <input type="checkbox" name="history" value="parents"> Parents still married</br>
+        <input type="checkbox" name="history" value="siblings"> I have more than two siblings
+      </div>
+      <button type="submit" id="submitButton" class="btn"> Divine my forntune!</button>
+    </form>
+    <span id="reveal">
+      <h1>The Spirits have spoken</h1>
+      <h3>Your path forward is hazy but...</h3>
+      <p>You answered:</p>
+      <span id="revealSpan"></span>
+      <br>
+      <p>The spirits tell me... <span id="futureLuck"></span></p>
+      <br>
+      <h3>Luck Meter</h3>
+      <div id="luckMeter">
+
+      </div>
+      <div id="revealHope">
+        <h3>Your Hopes</h3>
+        <!-- <ul id="hope-list"> -->
+        <!-- </ul> -->
+      </div>
+    </span>
+
+  </div>
+
+</div>
 </body>
+
 </html>
